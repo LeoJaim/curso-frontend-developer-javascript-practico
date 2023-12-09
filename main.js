@@ -23,7 +23,6 @@ function toggleDesktopMenu(){
         }
         desktopMenu.classList.toggle('inactive');
 }
-
 function toggleMobileMenu(){
         const isProductDetailClose  = asideProductDetail.classList.contains('inactive');
 
@@ -34,7 +33,6 @@ function toggleMobileMenu(){
         mobileMenu.classList.toggle('inactive');
 
 }
-
 function toggleProductDetail(){
         const isMobileClosed = mobileMenu.classList.contains('inactive');
         const isDesktopMenuClosed = desktopMenu.classList.contains('inactive');
@@ -53,7 +51,6 @@ function toggleProductDetail(){
         }
         asideProductDetail.classList.toggle('inactive');
 }
-
 function openProductDetailAside() {
         asideProductDetail.classList.add('inactive');
         productDetailContainer.classList.remove('inactive');
@@ -118,5 +115,4 @@ function renderProducts(prdList){
                 cardsContainer.appendChild(productCard);
         }
 }
-
 renderProducts(productList);
